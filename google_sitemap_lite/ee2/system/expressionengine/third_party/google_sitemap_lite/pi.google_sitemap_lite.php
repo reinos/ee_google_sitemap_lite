@@ -514,6 +514,11 @@ class Google_sitemap_lite
 						{
 							$entry_id = array_search($uri_segment.'/', $page_uris);
 						}
+
+						if($entry_id == '')
+						{
+							$entry_id = array_search('/'.$uri_segment.'/', $page_uris);
+						}
 					}
 
 					//check on the hidden pages
