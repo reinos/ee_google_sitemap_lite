@@ -1,3 +1,6 @@
+1.11
+	Bugfix : Fix bug for exclude in structure
+
 1.10
 	Added : exclude param
 	Updated : trailing slash support for structure

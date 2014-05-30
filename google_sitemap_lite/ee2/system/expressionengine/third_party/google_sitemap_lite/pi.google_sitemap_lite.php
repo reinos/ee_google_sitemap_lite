@@ -22,9 +22,9 @@ if(file_exists(PATH_THIRD.'navee/mod.navee.php'))
 
 $plugin_info = array(
 	'pi_name'        => 'Google Sitemap Lite',
-	'pi_version'     => '1.8',
+	'pi_version'     => '1.11',
 	'pi_author'      => 'Rein de vries',
-	'pi_author_url'  => 'http://www.reinos.nl/',
+	'pi_author_url'  => 'https://github.com/reinos/ee_google_sitemap_lite',
 	'pi_description' => 'Generate Google Sitemap based on the Structure/Taxonomy/Navee module',
 	'pi_usage'       => Google_sitemap_lite::usage()
   );
