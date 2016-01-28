@@ -532,9 +532,9 @@ class Google_sitemap_lite
 					
 					//get the last modified data
 					$result = $this->EE->db->get_where('channel_titles', array('entry_id' => $entry_id))->row();
-					if(!empty($date->edit_date))
+					if(!empty($result->edit_date))
 					{
-						$date = date('Y-m-d',$this->EE->localize->timestamp_to_gmt($date->edit_date));
+						 $date = substr($result->edit_date, 0, 4).'-'.substr($result->edit_date, 4, 2).'-'.substr($result->edit_date, 6, 2);
 					}
 					else
 					{
